@@ -1,0 +1,138 @@
+/* Thiết lập chung */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #eee;
+}
+
+/* Container chính của CV */
+.cv-container {
+    display: flex;
+    width: 900px;
+    max-width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    line-height: 1.5;
+}
+
+/* Cột Trái (40%) */
+.left-column {
+    flex: 0 0 40%; /* Chiếm đúng 40% */
+    background-color: #333;
+    color: #fff;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+
+/* Cột Phải (60%) */
+.right-column {
+    flex: 0 0 60%; /* Chiếm đúng 60% */
+    background-color: #f8f8f8;
+    padding: 30px 40px;
+    box-sizing: border-box;
+}
+
+/* Định dạng tiêu đề cột phải */
+.right-column header h1 {
+    font-size: 2.2em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.right-column header h2 {
+    font-size: 1.1em;
+    color: #666;
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ccc;
+}
+
+/* Định dạng tiêu đề các mục*/
+section h3 {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    border-bottom: 1px solid #777;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.right-column section h3 {
+    border-bottom: 2px solid #ccc;
+}
+
+/* Định dạng phần avatar/icon */
+.avatar-icon {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.avatar-icon i {
+    font-size: 70px;
+    color: #fff; /* Màu icon trắng */
+    border: 3px solid #fff;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* Định dạng phần liên hệ */
+.contact p {
+    margin: 5px 0;
+}
+.contact i {
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+/* Thanh Tiến độ Kỹ năng */
+.skill-item {
+    margin-bottom: 15px;
+}
+.skill-item p {
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+.progress-bar {
+    height: 8px;
+    background-color: #666;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.skill-level {
+    height: 100%;
+    background-color: #f7f7f7;
+}
+
+/* Định dạng mục học vấn và Kinh nghiệm */
+.entry {
+    margin-bottom: 20px;
+}
+.entry h4 {
+    font-size: 1em;
+    color: #000;
+    margin-bottom: 5px;
+}
+.entry p {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 0;
+}
+
+/* Định dạng ảnh profile */
+.profile-picture {
+    /* Đặt kích thước cố định */
+    width: 250px;
+    height: 250px; 
+    
+    /* Đảm bảo ảnh KHÔNG bị xén và giữ tỷ lệ */
+    object-fit: contain; 
+    
+    /* Thêm khoảng cách với nội dung khác */
+    margin-bottom: 20px; 
+    
+    /* Căn giữa ảnh nếu nó đứng độc lập */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

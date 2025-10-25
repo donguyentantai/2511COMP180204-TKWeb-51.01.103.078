@@ -1,0 +1,73 @@
+/* Định kiểu chung cho thẻ body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+/* Định kiểu chung cho khung chứa chính */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* Định kiểu cho ô nhập*/
+input[type="text"] {
+    padding: 8px;
+    width: 250px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+/* Định kiểu chung cho các nút */
+button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+/* Nút Thêm */
+.add-product-section button {
+    background-color: #007bff;
+    color: white;
+}
+/* Các định kiểu cho bảng Sản Phẩm */
+#productTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+#productTable th, #productTable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+#productTable th {
+    background-color: #f2f2f2;
+}
+/* Nút Sửa (Edit) */
+.edit-btn {
+    background-color: #ffc107;
+    color: black;
+}
+/* Nút Xóa (Delete) */
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+.message-text {
+    margin-top: 10px;
+    font-weight: bold;
+}
+.edit-product-section {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+}

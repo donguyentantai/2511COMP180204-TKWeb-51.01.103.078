@@ -1,0 +1,290 @@
+<!--Bài 5.3 Thiết kế layout trang danh sách sản phẩm-->
+<!doctype html>
+<html lang="vi">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tài Đỗ Shop</title>
+        
+        <!--Dẫn link cho bootstrap và CSS tuỳ chỉnh-->
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/layout.css">
+        <!--Dẫn link cho Font Awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous">
+    </head>
+
+    <body>
+        <!--Mặc định style của bootstrap cho toàn bộ nội dung website-->
+        <div class="container" style="height: auto;">
+            
+            <!--Khối header-->
+            <header class="hh-header">
+                <div class="row align-items-center">
+                    <div class="col-8">
+                        <h1 class="hh-company">Tài Đỗ Shop</h1>
+                        <h5 class="hh-slogan">Chất lượng làm nên uy tín</h5>
+                    </div>
+
+                    <div class="col-4 d-flex justify-content-end">
+                        <img src="../images/banner.png" class="img-fluid" alt="Banner quảng cáo" style="max-height: 100px;">
+                    </div>
+                </div>
+            </header>
+            
+            <!--Khối nav-->
+            <nav class="row navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                    <!--Các nội dung đề xuất nav-->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="layout.html">
+                                    Trang chủ
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Giới thiệu
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sanpham.html">
+                                    Sản phẩm
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Liên hệ
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Hỏi đáp
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tài khoản</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Đăng nhập</a></li>
+                                    <li><a class="dropdown-item" href="#">Đăng ký</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Quên mật khẩu</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--Ô tìm kiếm-->
+                    <div class="col-4 d-flex justify-content-end align-items-center">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                        <div class="ms-2 text-nowrap"> 
+                            <a href="#" class="text-decoration-none">English</a> | <a href="#" class="text-decoration-none">Tiếng Việt</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!--Chia cột cho khối article và aside-->
+            <div class="row hh-sheet row">
+                
+                <!--Khối article chứa nội dung danh sách sản phẩm-->
+                <article class="col-sm-9">
+                    <div class="hh-body">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <!--Sản phẩm 1-->
+                            <div class="col">
+                                <div class="card hh-card">
+                                    <div class="hh-product text-center">
+                                        <a href="sanpham.html">
+                                            <img src="../images/iphone14.png" class="card-img-top img-fluid" alt="iPhone 14">
+                                        </a>
+                                        <div class="card-body">
+                                            <h5 class="card-title">iPhone 14</h5>
+                                            <p class="card-text text-danger">$ 1019.9</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!--Sản phẩm 2-->
+                            <div class="col">
+                                <div class="card hh-card">
+                                    <div class="hh-product text-center">
+                                        <a href="sanpham.html">
+                                            <img src="../images/iphone14.png" class="card-img-top img-fluid" alt="iPhone 14">
+                                        </a>
+                                        <div class="card-body">
+                                            <h5 class="card-title">iPhone 14</h5>
+                                            <p class="card-text text-danger">$ 1019.9</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <!--Sản phẩm 3-->
+                            <div class="col">
+                                <div class="card hh-card">
+                                    <div class="hh-product text-center">
+                                        <a href="sanpham.html">
+                                            <img src="../images/iphone14.png" class="card-img-top img-fluid" alt="iPhone 14">
+                                        </a>
+                                        <div class="card-body">
+                                            <h5 class="card-title">iPhone 14</h5>
+                                            <p class="card-text text-danger">$ 1019.9</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Sản phẩm 4-->
+                            <div class="col">
+                                <div class="card hh-card">
+                                    <div class="hh-product text-center">
+                                        <a href="sanpham.html">
+                                            <img src="../images/iphone14.png" class="card-img-top img-fluid" alt="iPhone 14">
+                                        </a>
+                                        <div class="card-body">
+                                            <h5 class="card-title">iPhone 14</h5>
+                                            <p class="card-text text-danger">$ 1019.9</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Sản phẩm 5-->
+                            <div class="col">
+                                <div class="card hh-card">
+                                    <div class="hh-product text-center">
+                                        <a href="sanpham.html">
+                                            <img src="../images/iphone14.png" class="card-img-top img-fluid" alt="iPhone 14">
+                                        </a>
+                                        <div class="card-body">
+                                            <h5 class="card-title">iPhone 14</h5>
+                                            <p class="card-text text-danger">$ 1019.9</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Sản phẩm 6-->
+                            <div class="col">
+                                <div class="card hh-card">
+                                    <div class="hh-product text-center">
+                                        <a href="sanpham.html">
+                                            <img src="../images/iphone14.png" class="card-img-top img-fluid" alt="iPhone 14">
+                                        </a>
+                                        <div class="card-body">
+                                            <h5 class="card-title">iPhone 14</h5>
+                                            <p class="card-text text-danger">$ 1019.9</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+                </article>
+        
+                <!--Khối aside chứa các tiện ích phụ-->
+                <aside class="col-sm-3">
+                    <!--Khung giỏ hàng-->
+                    <div class="card hh-cart mb-3">
+                        <div class="card-header">
+                            <strong>Giỏ hàng</strong>
+                        </div>
+                        <div class="card-body row">
+                            <img class="col-md-5" src="../images/shoppingcart.gif" alt="Giỏ hàng">
+                            <ul class="col-md-7">
+                                <li><span>10 sp</span></li>
+                                <li><span>5,000,000 đ</span></li>
+                                <li><a href="#">Giỏ hàng</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--Khung tìm kiếm theo từ khoá-->
+                    <div class="card hh-card mb-3">
+                        <div class="card-header">
+                            <strong>Tìm kiếm</strong>
+                        </div>
+                        <div class="card-body">
+                            <input type="text" class="form-control mb-2" placeholder="Keywords">
+                            <button class="btn btn-primary btn-sm w-100">Tìm</button>
+                        </div>
+                    </div>
+
+                    
+                    <!--Khung card hàng đặc biệt-->
+                    <div class="card hh-card mb-3">
+                        <div class="card-header">
+                            <i class="fas fa-list"></i>
+                            <strong>Hàng đặc biệt</strong>
+                        </div>
+                        <div class="list-group list-group-flush">
+                            <a href="#" class="list-group-item list-group-item-action">Hàng bán chạy</a>
+                            <a href="#" class="list-group-item list-group-item-action">Hàng mới</a>
+                            <a href="#" class="list-group-item list-group-item-action">Hàng giảm giá</a>
+                            <a href="#" class="list-group-item list-group-item-action">Hàng yêu thích</a>
+                            <a href="#" class="list-group-item list-group-item-action">Hàng xem nhiều</a>
+                        </div>
+                    </div>
+
+                    <!--Khung card chủng loại-->
+                    <div class="card hh-card mb-3">
+                        <div class="card-header">
+                            <i class="fas fa-list"></i>
+                            <strong>Chủng loại</strong>
+                        </div>
+                        <div class="list-group list-group-flush">
+                            <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                Điện thoại
+                                <span class="badge bg-primary rounded-pill">55</span>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">Laptop</a>
+                            <a href="#" class="list-group-item list-group-item-action">Tablet</a>
+                            <a href="#" class="list-group-item list-group-item-action">Điều hòa</a>
+                            <a href="#" class="list-group-item list-group-item-action">Tivi</a>
+                            <a href="#" class="list-group-item list-group-item-action">Tủ lạnh</a>
+                            <a href="#" class="list-group-item list-group-item-action">Điện gia dụng</a>
+                        </div>
+                    </div>
+
+                    <!--Khung card nhà cung cấp-->
+                    <div class="card hh-card mb-3">
+                        <div class="card-header">
+                            <i class="fas fa-list"></i>
+                            <strong>Nhà cung cấp</strong>
+                        </div>
+                        <div class="list-group list-group-flush">
+                            <a href="#" class="list-group-item list-group-item-action">Apple</a>
+                            <a href="#" class="list-group-item list-group-item-action">Samsung</a>
+                            <a href="#" class="list-group-item list-group-item-action">Nokia</a>
+                            <a href="#" class="list-group-item list-group-item-action">GL</a>
+                            <a href="#" class="list-group-item list-group-item-action">Sony Ericson</a>
+                            <a href="#" class="list-group-item list-group-item-action">Dell</a>
+                            <a href="#" class="list-group-item list-group-item-action">Acer</a>
+                            <a href="#" class="list-group-item list-group-item-action">HP</a>
+                            <a href="#" class="list-group-item list-group-item-action">Toshiba</a>
+                        </div>
+                    </div>
+            
+                </aside>
+        
+            </div>
+    
+            <!--Khối footer-->
+            <footer class="row card">
+                <div class="card-body text-center">
+                    Copyright &copy; 2025 Tài Đỗ Shop. All rights reserved. Design by Do Nguyen Tan Tai.
+                </div>
+            </footer>
+    
+        </div>
+
+        <!--Dẫn link js của bootstrap-->
+        <script src="../js/bootstrap.bundle.min.js" ></script>
+    </body>
+</html>

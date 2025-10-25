@@ -1,0 +1,43 @@
+<!--Bài 6.1.1. Hồ cá vui nhộn-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hồ cá vui nhộn</title>
+        <meta charset="utf-8">
+
+        <!-- Khai báo liên kết tới tệp external CSS -->
+        <link rel="stylesheet" href="6.1.1.css">
+    </head>
+    <body id="aquarium">
+        <!--Nút thay đổi hình nền-->
+        <div id="controls">
+            <button id="toggleBgBtn">Đổi Cảnh Nền</button>
+            <button id="toggleMusicBtn">Phát/Dừng Nhạc</button>
+        </div>
+
+        <!--Nút dừng và phát nhạc-->
+        <audio id="backgroundMusic" loop>
+            <source src="./images/zombie_sound.mp3" type="audio/mpeg"> 
+            Trình duyệt của bạn không hỗ trợ thẻ audio.
+        </audio>
+        
+        <div id="content">
+            <div id="diver1"><img src="images/diver1.png" width="auto" height="auto"></div>
+
+            <div id="diver2"><img src="images/diver2.png" width="auto" height="auto"></div>
+
+            <div id="diver3"><img src="images/diver3.png" width="auto" height="auto"></div>
+
+            <div id="faintSchool"><img src="images/faintSchool.png" width="auto" height="auto"></div>
+
+            <div id="goldFishSchool"><img src="images/goldFishSchool.png" width="auto" height="auto"></div>
+
+            <div id="shark"><img src="images/shark.png" width="auto" height="auto"></div>
+            
+            <div id="turtle"><img src="images/turtle.png" width="auto" height="auto"></div>
+            
+        </div>
+        <!-- Khai báo liên kết tới tệp external JS -->
+        <script src="6.1.1.js"></script>
+    </body>
+</html>

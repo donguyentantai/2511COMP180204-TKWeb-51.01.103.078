@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <!--Thẻ khai báo-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ứng Dụng Quản Lý Sản Phẩm</title>
+        <!-- Khai báo liên kết tới tệp external CSS -->
+        <link rel="stylesheet" href="3.3.css">
+    </head>
+    
+    <!--Thẻ chưa nội dung chính của trang web-->
+    <body>
+        <!--Khối định kiểu chung cho cả trang web-->
+        <div class="container">
+            <h1>Quản Lý Sản Phẩm</h1>
+            <hr>
+            <!-- Phần thêm sản phẩm mới -->
+            <div class="add-product-section">
+                <h2>Thêm Sản Phẩm Mới</h2>
+                <input type="text" id="productName" placeholder="Nhập tên sản phẩm">
+                <button onclick="addProduct()">Thêm</button>
+                <p id="message" class="message-text"></p>
+            </div>
+            <hr>
+            <!-- Phần hiển thị danh sách sản phẩm -->
+            <div class="display-product-section">
+                <h2>Danh Sách Sản Phẩm (<span id="productCount">0</span> sản phẩm)</h2>
+                <table id="productTable">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Tên Sản Phẩm</th>
+                            <th>Thao Tác</th>
+                        </tr>
+                    </thead>
+                    <!--Thẻ động, dùng để giữ hàng cho sản phẩm mới-->
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <!-- Phần sửa sản phẩm -->
+            <div id="editProductSection" class="edit-product-section" style="display: none;">
+                <h2>Sửa Sản Phẩm</h2>
+                <input type="text" id="editProductName" placeholder="Tên sản phẩm mới">
+                <button onclick="updateProduct()">Sửa</button>
+                <button onclick="cancelEdit()">Hủy</button>
+            </div>
+        </div>
+    <!-- Khai báo liên kết tới tệp external JS -->
+    <script src="3.3.js"></script> </body>
+</html>
